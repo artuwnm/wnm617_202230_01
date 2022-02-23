@@ -1,5 +1,8 @@
-# wnm617_202230_01
-WNM 617: Mobile Tech
+# Yoomi Yi
 
-## YOU SHOULD NEVER EDIT THIS FILE.
-This one is for the main project.
+## Class Project Mobile Tech
+
+## Important Links
+
+- https://yoomiyi.com
+- http://yoomiyi.com/aau/wnm617/yoomi.yi
