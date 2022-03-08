@@ -3,20 +3,272 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Yoomi - Portfolio</title>
-</head>
+	<title>Live Life in Full - Bloom.</title>
 
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/app.js"></script>
+
+
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+	</style>
+
+</head>
 <body>
-	<header class="navbar">
-			<div class="container display-flex">
-				<div class="flex-none">
-					<h1> Coming Soon! </h1>
-						<p> Stay Tuned. </p>
+
+<!-- Signin-->
+	<section data-role="page" id="signin-page">
+		<div data-role="main">
+			<form id="signin-form" class="form">
+				<div class="form-control">
+					<label for="signin-username" class="form-label">Email or Username</label>
+					<input type="text" id="signin-name" data-role="none" class="form-input" placeholder="Type your email or username">
+				</div>
+				<div class="form-control">
+					<label for="signin-password" class="form-label">Password</label>
+					<input type="text" id="signin-password" data-role="none" class="form-input" placeholder="Type your Password">
+				</div>
+			<!--<input type="submit" data-role="none"> -->
+				<div class="form-control">
+					<a href="#home-page" class="form-button">Submit</a>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+
+
+
+	<!-- home page-->
+	<section data-role="page" id="home-page">
+		<header data-role="header">
+			<h1>Bloom.</h1>
+		</header>
+		<div data-role="main">Your flowers</div>
+
+		<footer data-role="footer">
+			<ul>
+				<li> <a href="#flowermap-page">Flower Map</a></li>
+				<li> <a href="#add-flower-page">+</a></li>
+				<li> <a href="#myboard-page">My Board</a></li>
+			</ul>
+		</footer>
+	</section>
+
+	<!-- flowermap page-->
+
+		<section data-role="page" id="flowermap-page">
+		<header data-role="header">
+			<h1>Current Location</h1>
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+		
+		<p>Near You</p>
+
+		</div>
+
+
+		<footer data-role="footer">
+			<ul>
+				<li> <a href="#flowermap-page">Flower Map</a></li>
+				<li> <a href="#add-flower-page">+</a></li>
+				<li> <a href="#myboard-page">My Board</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+
+
+	<!-- Add more flower page-->
+
+	<section data-role="page" id="add-flower-page">
+		<header data-role="header">
+			<h1>Add Flowers</h1>
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+
+			</ul>
+		</header>
+		<div data-role="main">
+
+				<div class="form-control">
+					<label for="add-flower-page" class="form-label">Flower Nickname</label>
+					<input type="text" id="edit-flower-nickname" data-role="none" class="form-input" placeholder="Type Flower Nickname">
 				</div>
 
+				<div class="form-control">
+					<label for="add-flower-page" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Search Flower Tpyes">
+				</div>
 
-			</div>
-	</header>
+				<div class="form-control">
+					<label for="add-flower-page" class="form-label">Select Flower Color</label>
 
+				<div class="form-radio">
+					<input type="radio" id="add-flower-color" data-role="none" value="red">
+					<label for="red">Red</label>
+
+
+					<input type="radio" id="add-flower-color" data-role="none" value="orange">
+					<label for="orange">Orange</label>
+
+
+					<input type="radio" id="add-flower-color" data-role="none" value="pink">
+					<label for="pink">Pink</label>
+
+					<input type="radio" id="add-flower-color" data-role="none" value="purple">
+					<label for="purple">Purple</label>
+
+					<input type="radio" id="add-flower-color" data-role="none" value="other">
+					<label for="other">Other</label>
+				</div>
+
+				<div class="form-control">
+					<label for="add-location" class="form-label">Location</label>
+					<input type="text" id="add-location" data-role="none" class="form-input" placeholder="Update location">
+				</div>
+
+				<div class="form-control">
+					<label for="add-flower-comments" class="form-label">Add Note</label>
+					<input type="text" id="add-flower-description" data-role="none" class="form-input" placeholder="Describe your feelings, scent, and ect.">
+				</div>
+
+				<a href="#" class="form-button">Register</a>
+
+				</div>
+			</form>
+		<footer data-role="footer">
+			<ul>
+				<li> <a href="#flowermap-page">Flower Map</a></li>
+				<li> <a href="#add-flower-page">+</a></li>
+				<li> <a href="#myboard-page">My Board</a></li>
+			</ul>
+		</footer>
+</section>
+
+
+	<!-- My Board page-->
+
+
+	<section data-role="page" id="myboard-page">
+		<header data-role="header">
+			<h1>My Flower Lists</h1>
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+
+			</ul>
+		</header>
+		<div data-role="main">
+			<ul>
+				<li><a href="#flower-profile-page">Flower 1</a></li>
+				<li><a href="#flower-profile-page">Flower 2</a></li>
+				<li><a href="#flower-profile-page">Flower 3</a></li>
+				<li><a href="#flower-profile-page">Flower 4</a></li>
+				<li><a href="#flower-profile-page">Flower 5</a></li>
+				<li><a href="#flower-profile-page">Flower 6</a></li>
+				<li><a href="#flower-profile-page">Flower 7</a></li>
+				<li><a href="#flower-profile-page">Flower 8</a></li>
+				<li><a href="#flower-profile-page">Flower 9</a></li>
+			</ul>
+		</div>
+		<footer data-role="footer">
+			<ul>
+				<li> <a href="#flowermap-page">Flower Map</a></li>
+				<li> <a href="#add-flower-page">+</a></li>
+				<li> <a href="#myboard-page">My Board</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+	<!-- Edit Page
+	<section data-role="page" id="flower-edit-page">
+		<header data-role="header">
+			<h1>Edit Flower Profile</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Back</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#list-page">Save</a></li>
+			</ul>
+
+		</header>
+		<div data-role="main">
+
+			<form id="edit-flower-form" class="form">
+				<div class="form-control">
+					<label for="edit-flower-page" class="form-label">New flower Nickname</label>
+					<input type="text" id="edit-flower-nickname" data-role="none" class="form-input" placeholder="Type New flower Nickname">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-page" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Search new flower types">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Select New flower Color</label>
+
+				<div class="form-radio">
+					<input type="radio" id="edit-flower-color" data-role="none" value="red">
+					<label for="red">Red</label>
+
+
+					<input type="radio" id="edit-flower-color" data-role="none" value="orange">
+					<label for="orange">Orange</label>
+
+
+					<input type="radio" id="edit-flower-color" data-role="none" value="pink">
+					<label for="pink">Pink</label>
+
+					<input type="radio" id="edit-flower-color" data-role="none" value="purple">
+					<label for="purple">Purple</label>
+
+					<input type="radio" id="edit-flower-color" data-role="none" value="other">
+					<label for="other">Other</label>
+				</div>
+
+				<div class="form-control">
+					<label for="edit-location" class="form-label">New Location</label>
+					<input type="text" id="edit-spay-neuter" data-role="none" class="form-input" placeholder="Update location">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">New Comments</label>
+					<input type="text" id="edit-flower-description" data-role="none" class="form-input" placeholder="Type new comments">
+				</div>
+
+			</form>
+
+		
+		<footer data-role="footer">
+			<ul>
+				<li> <a href="#flowermap-page">Flower Map</a></li>
+				<li> <a href="#add-page">+</a></li>
+				<li> <a href="#myboard-page">My Board</a></li>
+			</ul>
+		</footer>
+	</section>
+
+-->
+
+
+
+
+
+	
 </body>
 </html>
