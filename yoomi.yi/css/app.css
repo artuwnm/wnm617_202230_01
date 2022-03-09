@@ -43,22 +43,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Layout Classes */
-
-.hidden { display: none; }
-
-.display-flex { display: flex; }
-.display-block { display: block; }
-.display-inline-flex { display: inline-flex; }
-.display-inline-block { display: inline-block; }
-
-.flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
-
-.flex-align-center { align-items: center; }
-.flex-justify-center { justify-content: center; }
-
-.flex-column { flex-direction: column; }
 
 
 
@@ -191,3 +175,20 @@ a:hover {
 }
 
 
+/* Layout Classes */
+
+.hidden { display: none; }
+
+.display-flex { display: flex; }
+.display-block { display: block; }
+.display-inline-flex { display: inline-flex; }
+.display-inline-block { display: inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
+
+.flex-column { flex-direction: column; }
+.overscroll { overflow:auto; }

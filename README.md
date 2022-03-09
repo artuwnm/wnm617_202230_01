@@ -1,8 +1,4 @@
-# Yoomi Yi
 
-## Class Project Mobile Tech
+## wnm617_202230_01
 
-## Important Links
-
-- https://yoomiyi.com
-- http://yoomiyi.com/aau/wnm617/yoomi.yi
+wnm617: Mobile Tech
