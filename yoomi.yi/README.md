@@ -2,8 +2,6 @@
 
 ## Class Project Mobile Tech
 
-This class is so super cool
-
 ## Important Links
 
 - https://yoomiyi.com
