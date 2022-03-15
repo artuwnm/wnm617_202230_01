@@ -1,18 +1,19 @@
 
 $(() => {
-
-
-	// EVENT DELEGATION
-	$(document)
-
-	// FORM SUBMISSIONS, signin-form is only delegating
-	.on("submit", "#signin-form", function(e) { 
-		console.log(e)
-
-	})
-
-
-
-
-	// CLICKS
+    
+    // EVENT DELEGATION
+    $(document)
+    
+    // FORM SUBMISSIONS
+    .on("submit", "#login-form", function(e){
+        e.preventDefault();
+        console.log(e);
+        checkLoginForm();
+    })
+    
+    // CLICKS
+    .on("click", ".js-logout", function() {
+      sessionStorage.removeItem("userId");
+      checkUserId();
+   })
 });

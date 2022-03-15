@@ -175,6 +175,32 @@ a:hover {
 }
 
 
+/* Login */
+
+.logo-img {
+	width: 100%;
+}
+
+#login-form {
+    padding: 2em;
+}
+#signup-form {
+    padding: 2em;
+}
+#add-dog-form {
+    padding: 2em;
+}
+#edit-dog-form{
+    padding: 2em;
+}
+#edit-user-form{
+    padding: 2em;
+}
+
+.login-form-text{
+    text-align: center;
+}
+
 /* Layout Classes */
 
 .hidden { display: none; }
