@@ -97,10 +97,7 @@ a:hover {
 	display: inline-block;
 }
 
-#signin-form,
-#add-cat-form,
-#edit-animal-form,
-#edit-name-form {
+#signin-form,{
 	padding: 1em;
 }
 
