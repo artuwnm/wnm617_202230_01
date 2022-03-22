@@ -79,6 +79,10 @@ a:hover {
 	color:  #D3D3D3;
 	
 }
+
+
+
+
 /* Forms */
 
 .description {
@@ -324,8 +328,7 @@ a:hover {
 
 .add-picture {
 
-	width: 200px;
-	height:  100px;
+	width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -359,7 +362,37 @@ a:hover {
 
 }
 
-/*Page layouts*/
+
+
+
+/* Login */
+
+.logo-img {
+	width: 100%;
+}
+
+#signin-form {
+    padding: 2em;
+}
+#signup-form {
+    padding: 2em;
+}
+#add-dog-form {
+    padding: 2em;
+}
+#edit-dog-form{
+    padding: 2em;
+}
+#edit-user-form{
+    padding: 2em;
+}
+
+.login-form-text{
+    text-align: center;
+}
+
+
+/*page layouts */
 
 .ui-mobile .ui-page-active {
 	display: flex;
@@ -374,23 +407,11 @@ a:hover {
 }
 
 
-/*page layouts */
-
-.ui-mobile .ui-page-active {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 
 [data-role="main"] {
 	flex: 1 1 100%;
-	/*overflow: hidden; */
-	position: relative; /*scrolls on its own space*/
+	overflow: hidden;
+	position: relative;
 	 padding: 0 1.6em;
 }
 
@@ -443,32 +464,6 @@ a:hover {
 }
 
 
-/* Login */
-
-.logo-img {
-	width: 100%;
-}
-
-#signin-form {
-    padding: 2em;
-}
-#signup-form {
-    padding: 2em;
-}
-#add-dog-form {
-    padding: 2em;
-}
-#edit-dog-form{
-    padding: 2em;
-}
-#edit-user-form{
-    padding: 2em;
-}
-
-.login-form-text{
-    text-align: center;
-}
-
 /* Layout Classes */
 
 .hidden { display: none; }
@@ -485,4 +480,4 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 .flex-column { flex-direction: column; }
-/*.overscroll { overflow:auto; }*/
+.overscroll { overflow:auto; }

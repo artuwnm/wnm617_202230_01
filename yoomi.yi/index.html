@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Live Life in Full - Bloom.</title>
 	<base href="/aau/wnm617/yoomi.yi/">
@@ -105,21 +105,23 @@
 		</div>
 	</section>
 
-	<!-- Signup success page
+	<!-- Signup success page -->
 
-	<section data-role="page" id="success_page">
+	<section data-role="page" id="signup-sucess-page">
      <header data-role="header">
      	<h1>Welcome</h1>
      </header>
 
-     	<div data-role="main">
-     	<p> You've successfully created an account! <p>
-     	</div>
- 		<div>
-			<a href="#login_page" class="form-button">Back to Login</a>
+     	<div data-role="main" class="make-center">
+     	<h1> You've been successfully created an account! </h1>
+
+			<a href="#signin-page" class="form-button2">Back to Login</a>
+
 		</div>
+
+
      </section>
-	-->
+
 
 	<!-- home page-->
 
@@ -129,7 +131,7 @@
 		</header>
                 <h4>Your Flower Lists</h4>
 
-        <div data-role="main" class="overscroll">
+        <div data-role="main">
         <div class="gallery-box">
    			<div class="display-grid flex-column">
 
@@ -139,6 +141,7 @@
    				<a href="#flower4-profile-page"><div class="image-nav-4"></div></a>
    				<a href="#flower5-profile-page"><div class="image-nav-5"></div></a>
    				<a href="#flower6-profile-page"><div class="image-nav-6"></div></a>
+   		
    				<!--
    				<a href="#myboard-page"><div class="image-nav-7"></div></a>
    				<a href="#myboard-page"><div class="image-nav-8"></div></a>
@@ -170,7 +173,7 @@
 			</ul>
 		</header>
 
-		<div data-role="main">
+		<div data-role="main" class="overscroll">
 		
 		<iframe class="current-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
@@ -219,7 +222,7 @@
 			</ul>
 		</header>
 
-		<div data-role="main">
+		<div data-role="main" class="overscroll">
 				<h3>Information</h3>
 				<div class="form-control">
 					<label for="add-flower-page" class="form-label">Flower Type</label>
@@ -279,7 +282,7 @@
 
 		<div data-role="main">
 			<div class="make-center">
-				<h1>You've sucessfully added new flower!</h1>
+				<h1>You've been sucessfully added new flower!</h1>
 			</div>
 					
 
@@ -340,7 +343,7 @@
 <!-- 1. Tulip -->
 
 	<section data-role="page" id="flower1-profile-page">
-		<header data-role="header" class="display-flex">
+		<header data-role="header" class="display-flex overscroll">
 			<h1>Flower Profile</h1>
 
 		<ul>
@@ -352,20 +355,27 @@
          
 
 
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_1.jpg">
-
-
    			<h1>Tulip</h1>
+   		</div>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower1-edit-page" class="form-button">Edit</a>
    			</div>
-
+   			
+   		
    </div>
 
 		<footer data-role="footer">
@@ -381,7 +391,7 @@
 <!-- 2. Rose -->
 
 	<section data-role="page" id="flower2-profile-page">
-		<header data-role="header" class="display-flex">
+		<header data-role="header" class="display-flex overscroll">
 			<h1>Flower Profile</h1>
 
 			<ul>
@@ -392,21 +402,31 @@
          
 
 
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_2.jpg">
 
 
    			<h1>Rose</h1>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower2-edit-page" class="form-button">Edit</a>
    			</div>
-
-   		</div>
+   			
+   		
+   </div>
 
 		<footer data-role="footer">
 			<ul>
@@ -418,7 +438,7 @@
 			</section>
 
 
-<!-- 3. Rose -->
+<!-- 3. Peony -->
 
 	<section data-role="page" id="flower3-profile-page">
 		<header data-role="header" class="display-flex">
@@ -432,20 +452,30 @@
          
 
 
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_3.jpg">
 
 
    			<h1>Peony</h1>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower3-edit-page" class="form-button">Edit</a>
    			</div>
-
+   			
+   		
    </div>
 
 		<footer data-role="footer">
@@ -471,20 +501,30 @@
          
 
 
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_4.jpg">
 
 
    			<h1>Violet</h1>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower4-edit-page" class="form-button">Edit</a>
    			</div>
-
+   			
+   		
    </div>
 
 		<footer data-role="footer">
@@ -510,20 +550,29 @@
          
 
 
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_5.jpg">
 
 
    			<h1>Daisy</h1>
+   		</div>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower5-edit-page" class="form-button">Edit</a>
    			</div>
-
+   			
+   		
    </div>
 
 		<footer data-role="footer">
@@ -547,23 +596,31 @@
 		</header>
          
 
-
-        <div data-role="main">
+        <div data-role="main" class="overscroll">
         <div class="individual-page">
    			<img class= "individual-image" src="lib/image/flower/flower_6.jpg">
 
 
    			<h1>Narcissus</h1>
 
-   			<p>Color: Pink </p>
-   			<P>Description: Cup-shaped blossom and petals are smooth. I can feel Spring is around the corner!</P>
-   			<p>Location: Lick Mill Park, San Jose</p>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
 
    			 <a href="#flower6-edit-page" class="form-button">Edit</a>
    			</div>
-
+   			
+   		
    </div>
-
 		<footer data-role="footer">
 			<ul>
 				<li><a href="#flowermap-page">Map</a></li>
@@ -589,7 +646,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form">
+			<form id="edit-flower-form" class="form overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
@@ -646,7 +703,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form">
+			<form id="edit-flower-form" class="form overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
@@ -703,7 +760,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form">
+			<form id="edit-flower-form" class="form overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
@@ -757,7 +814,7 @@
 			</ul>
 		</header>
 
-		<div data-role="main">
+		<div data-role="main" class="overscroll">
 
 		<h3> New Information </h3>
 			<form id="edit-flower-form" class="form">
@@ -816,7 +873,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form">
+			<form id="edit-flower-form" class="form overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
@@ -872,7 +929,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form">
+			<form id="edit-flower-form" class="form overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
