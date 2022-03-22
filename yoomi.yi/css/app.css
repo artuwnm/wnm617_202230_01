@@ -20,16 +20,40 @@
 }
 
 body {
-	margin: 0;
+	margin-left: 2em;
 	font-size: 100%;
 	font-family: var(--font-sans);
 
+
 }
 
-h1,h2,h3 {
-	font-size:  1em;
-	font-weight: 600;
+h1 {
+	font-size:  2em;
+
 	font-family: var(--font-serif);
+
+}
+
+h2 {
+
+	font-size:  1em;
+	font-family: var(--font-sans);
+	margin-left: 2em;
+
+}
+
+h3 {
+
+	font-size:  1em;
+	font-family: var(--font-sans);
+}
+
+h4 {
+	font-size:  1.2em;
+
+	font-family: var(--font-serif);
+	text-align: center;
+
 }
 
 a {
@@ -44,11 +68,28 @@ a:hover {
 }
 
 
+.underline {
+	text-decoration: underline;
+}
 
+.signin-form-text {
 
+	font-size:  1em;
+	font-family: var(--font-sans);
+	color:  #D3D3D3;
+	
+}
 /* Forms */
 
+.description {
 
+	padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
 .form-control  {
 	margin: 1em 0;
 
@@ -76,7 +117,7 @@ a:hover {
 
 }
 
-.form-button{
+.form-button-signin{
 	display: inline-block;
 	width: 100%;
 	border-width: 0;
@@ -93,8 +134,209 @@ a:hover {
 
 }
 
+.form-button{
+	display: inline-block;
+	width: 30%;
+	border-width: 0;
+	background-color: var(--color-neutral-darkest);
+	color: var(--color-neutral-light);
+	font: var(--font-serif);
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+
+}
+
+.form-button2{
+	display: inline-block;
+	width: 50%;
+	border-width: 0;
+	background-color: var(--color-neutral-darkest);
+	color: var(--color-neutral-light);
+	font: var(--font-serif);
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+}
+
 .form-radio {
 	display: inline-block;
+}
+
+
+.gallery-box {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.gallery-box2 {
+  display: flex;
+  justify-content: left;
+
+}
+
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 8px;
+}
+
+.individual-page{
+	margin-top: 3em;
+	text-align: center;
+
+}
+
+.make-center{
+	text-align: center;
+
+}
+
+.individual-image {
+	width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right:  auto;
+    display: block;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/*Flower image list*/
+
+.image-nav-1{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-2{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-3{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-4{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image-nav-5{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-6{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image-nav-7{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-8{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nearby-1 {
+
+	width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../lib/image/flower/flower_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nearby-2 {
+
+	width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../lib/image/flower/flower_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.add-picture {
+
+	width: 200px;
+	height:  100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-picture {
+
+	width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-position: center;
 }
 
 #signin-form,{
@@ -102,6 +344,20 @@ a:hover {
 }
 
 
+ .column {
+    float: left;
+    width: 50%;
+    }
+
+
+.current-map {
+	 background-position: center;
+	 width: 100%;
+	 height:  400px;
+	 margin-top:  2em;
+
+
+}
 
 /*Page layouts*/
 
@@ -117,17 +373,32 @@ a:hover {
 
 }
 
+
+/*page layouts */
+
+.ui-mobile .ui-page-active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 [data-role="main"] {
 	flex: 1 1 100%;
-	overflow: hidden;
+	/*overflow: hidden; */
 	position: relative; /*scrolls on its own space*/
+	 padding: 0 1.6em;
 }
 
 .ui-header,
 .ui-footer {
 	flex: none;
 	height: var(--header-height);
-	line-height: var(--header-height);
+	line-height: 3rem;
 	border-width: 0;
 	background-color: var(--color-neutral-medium);
 	color: var(--color-neutral-darkest);
@@ -214,4 +485,4 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 .flex-column { flex-direction: column; }
-.overscroll { overflow:auto; }
+/*.overscroll { overflow:auto; }*/
