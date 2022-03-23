@@ -7,3 +7,5 @@
 - http://yoomiyi.com/aau/wnm617/yoomi.yi
 
 
+## Side Projects
+- http://yoomiyi.com/aau/wnm617/yoomi.yi/profile/index.html
