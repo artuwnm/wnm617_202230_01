@@ -1,4 +1,13 @@
+
+
+
+
 const HomePage = async() => {
+   let {result} = await query({
+      type:'recent_flower_locations',
+      params:[sessionStorage.userId]
+   });
+   console.log(result);
 }
 
 
@@ -7,11 +16,11 @@ const MapPage = async() => {
    let {result:flowers} = await query({
       type:'flowers_by_user_id',
       params:[sessionStorage.userId]
-   })
+   });
    
    console.log(flowers)
 
-   $("#list-page .animal-list").html(makeAnimalList(flowers));
+   $("#home-page .flower-list").html(makeFlowerList(flowers));
 }
 
 
@@ -29,18 +38,18 @@ const AddFlowerPage = async() => {
 
 
 const BoardPage = async() => {
-   let {result:animals} = await query({
-      type:'animal_by_id',
-      params:[sessionStorage.animalId]
+   let {result:flowers} = await query({
+      type:'flower_by_id',
+      params:[sessionStorage.flowerId]
    })
-   let [animal] = animals;
-   $(".animal-profile-top").css({"background-image":`url(${animal.img})`})
-   $("#animal-profile-page h1").html(animal.name)
-   $(".animal-profile-description").html(makeAnimalProfileDescription(animal));
+   let [flower] = flowers;
+   $(".flower-profile-top").css({"background-image":`url(${flower.img})`})
+   $("#flower-profile-page h1").html(flower.name)
+   $(".flower-profile-description").html(makeFlowerProfileDescription(flower));
 
    let {result:locations} = await query({
-      type:'locations_by_animal_id',
-      params:[sessionStorage.animalId]
+      type:'locations_by_flower_id',
+      params:[sessionStorage.flowerId]
    })
    console.log(locations)
 }

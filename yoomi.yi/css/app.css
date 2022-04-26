@@ -63,6 +63,7 @@ h4 {
 >>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
 }
 
+
 a {
 	color: inherit;
 	font-weight: 500;
@@ -384,9 +385,21 @@ a:hover {
 }
 
 
+.map-image {
+	background-image:  url(..lib/image/google_map.PNG);
+}
+
+.map-filter-select {
+    width: 90%;
+    border-radius: 50px;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Login */
->>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
+
 
 .logo-img {
 	width: 100%;
