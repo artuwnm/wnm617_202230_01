@@ -16,7 +16,7 @@ const MapPage = async() => {
    let {result:flowers} = await query({
       type:'flowers_by_user_id',
       params:[sessionStorage.userId]
-   });
+   })
    
    console.log(flowers)
 

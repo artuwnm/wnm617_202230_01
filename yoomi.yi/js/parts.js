@@ -1,9 +1,16 @@
 
 
+
 const makeFlowerList = templater(o=>`
-		<a href="#home-page" data-id="{$o.id}" class="js-flower-jump">
-				<div class="image-nav-1" style="background-image": url({$o.img});">
-						</div>
+<div class="flower-list-item display-inline-block">
+	<a href="#home-page" class="js-flower-jump" data-id="${o.id}">
+	      <div class="image-nav-1">
+	         <img src="${o.img}" alt="">
+	         <div class="flower-list-name" style="text-align:center">${o.name}</div>
+	      </div>
+	    
+	 </a>
+</div>
 
 `);
 

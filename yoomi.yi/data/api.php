@@ -48,12 +48,16 @@ function makeQuery($c,$ps,$p,$makeResults=true) {
 }
 
 
+/*page routing*/
+
+
+
 function makeStatement($data) {
    $c = makeConn();
    $t = $data->type;
    $p = $data->params;
 
-//USERS, ANIMALS, LOCATIONS
+//USERS, flowerS, LOCATIONS
 
    switch($t) {
 
@@ -85,12 +89,25 @@ function makeStatement($data) {
 
       case "recent_flower_locations":
             return makeQuery($c, "SELECT *
-               FROM `track_flowers` a
-               JOIN `track_locations` l
-               ON a.id = l.flower_id
-               WHERE a.user_id = ?
+            FROM `track_flowers` a
+            JOIN (
+               SELECT lg.*
+               FROM `track_locations` lg
+               WHERE lg.id = (
+                  SELECT lt.id
+                  FROM `track_locations` lt
+                  WHERE lt.flower_id = lg.flower_id
+                  ORDER BY lt.date_create DESC
+                  LIMIT 1
+               )
 
-            ", $p);
+               
+            ) l
+            ON a.id = l.flower_id
+            WHERE a.user_id = ?
+            ORDER BY l.flower_id, l.date_create DESC
+         ", $p);
+
 
 
 
@@ -109,4 +126,3 @@ $data = json_decode(file_get_contents("php://input"));
 echo json_encode(
    makeStatement($data),
    JSON_NUMERIC_CHECK
-);
