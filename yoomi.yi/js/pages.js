@@ -2,13 +2,63 @@
 
 
 
-const HomePage = async() => {
+const FlowerMapPage = async() => {
    let {result} = await query({
       type:'recent_flower_locations',
       params:[sessionStorage.userId]
    });
    console.log(result);
+
+   if(error) throw(error);
+
+   let valid_animals = result.reduce((r,o)=>{
+      o.icon = o.img;
+      if(o.lat && o.lng) r.push(o);
+      return r;
+   },[]);
+
+
+   let valid_flowers = result.reduce((r,o)=>{
+      o.icon = o.img;
+      if(o.lat && o.lng) r.push(o);
+      return r;
+   },[]);
+
+
+
+   let map_el = await makeMap("#flowermap-page .map");
+   makeMarkers(map_el,valid_animals)
+
+  map_el.data("markers").forEach((m,i)=>{
+      console.log(m)
+      m.addListener("click",function(e){
+         let flower = valid_flowers[i];
+
+         
+         //console.log(flower)
+
+         // Just Navigate
+         sessionStorage.flowerId = flower.flower_id;
+         $.mobile.navigate("#flower-profile-page");
+
+
+         // Open Google InfoWindow
+         // map_el.data("infoWindow")
+         //    .open(map_el.data("map"),m);
+         // map_el.data("infoWindow")
+         //    .setContent(makeAnimalPopupBody(flower));
+
+
+            $("#map-drawer")
+            .addClass("active")
+            .find(".modal-body")
+            .html(makeFlowerPopupBody({...flower, id:flower.flower_id}))
+      })
+   })
 }
+
+
+
 
 
 const MapPage = async() => {
