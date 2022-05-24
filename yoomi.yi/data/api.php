@@ -92,7 +92,7 @@ function makeStatement($data) {
             FROM `track_flowers` a
             JOIN (
                SELECT lg.*
-               FROM `track_locations` lg
+               FROM `track_locations` l
                WHERE lg.id = (
                   SELECT lt.id
                   FROM `track_locations` lt

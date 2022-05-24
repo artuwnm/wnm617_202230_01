@@ -1,6 +1,16 @@
+// import { query } from './function.js';
 
+const HomePage = async() => {
+   // destructuring
+   let {result:flowers} = await query({
+      type:'flowers_by_user_id',
+      params:[sessionStorage.userId]
+   })
+   
+   console.log(flowers)
 
-
+   $("#home-page .flower-list").html(makeFlowerList(flowers));
+}
 
 const FlowerMapPage = async() => {
    let {result} = await query({
@@ -10,13 +20,6 @@ const FlowerMapPage = async() => {
    console.log(result);
 
    if(error) throw(error);
-
-   let valid_animals = result.reduce((r,o)=>{
-      o.icon = o.img;
-      if(o.lat && o.lng) r.push(o);
-      return r;
-   },[]);
-
 
    let valid_flowers = result.reduce((r,o)=>{
       o.icon = o.img;
@@ -62,7 +65,7 @@ const FlowerMapPage = async() => {
 
 
 const MapPage = async() => {
-   // destructuring
+   /*// destructuring
    let {result:flowers} = await query({
       type:'flowers_by_user_id',
       params:[sessionStorage.userId]
@@ -70,7 +73,7 @@ const MapPage = async() => {
    
    console.log(flowers)
 
-   $("#home-page .flower-list").html(makeFlowerList(flowers));
+   $("#home-page .flower-list").html(makeFlowerList(flowers));*/
 }
 
 

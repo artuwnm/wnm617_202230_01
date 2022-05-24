@@ -29,11 +29,10 @@
 	@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
 	</style>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj18KDsu2me3T9mVkWLmwtalzhncPqpQ8"
+       <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
     ></script>
-
 
 </head>
 
@@ -146,33 +145,19 @@
 
         <div data-role="main" class="overscroll">
 
-        	<!--
-        	<ul class="flower-list">
-        		<li clas="flower-list-item">
-        			<a href="#flower-profile-page" class="js-animal-jump">
-        				<div class="flower-list-image">
-        					<img src="image/flower/flower_1.jpg" -->
-
-
-
-
-
         <div class="gallery-box">
    			<div class="display-grid flex-column">
 
 
-   				<li class="flower-list"><a href="#flower1-profile-page">Flower 1<div class="image-nav-1"></div></a></li>
-   				<li class="flower-list"><a href="#flower2-profile-page">Flower 2<div class="image-nav-2"></div></a></li>
-   				<li class="flower-list"><a href="#flower3-profile-page">Flower 3<div class="image-nav-3"></div></a></li>
-   				<li class="flower-list"><a href="#flower4-profile-page">Flower 4<div class="image-nav-4"></div></a></li>
-   				<li class="flower-list"><a href="#flower5-profile-page">Flower 5<div class="image-nav-5"></div></a></li>
-   				<li class="flower-list"><a href="#flower6-profile-page">Flower 6<div class="image-nav-6"></div></a></li>
+   				<li class="flower-list"><a href="#flower1-profile-page">Tulip<div class="image-nav-1"></div></a></li>
+   				<li class="flower-list"><a href="#flower2-profile-page">Rose<div class="image-nav-2"></div></a></li>
+   				<li class="flower-list"><a href="#flower3-profile-page">Peony<div class="image-nav-3"></div></a></li>
+   				<li class="flower-list"><a href="#flower4-profile-page">Violet<div class="image-nav-4"></div></a></li>
+   				<li class="flower-list"><a href="#flower5-profile-page">Daisy<div class="image-nav-5"></div></a></li>
+   				<li class="flower-list"><a href="#flower6-profile-page">Narcissus<div class="image-nav-6"></div></a></li>
    		
    		
-   				<!--
-   				<a href="#myboard-page"><div class="image-nav-7"></div></a>
-   				<a href="#myboard-page"><div class="image-nav-8"></div></a>
-   				-->
+   	
    			</div>
    		</div>
 	</div>
@@ -193,26 +178,40 @@
 
     <section data-role="page" id="flowermap-page">
         <header data-role="header">
-            <h1>Pick flower's Location</h1>
+            <h1>Flower Location</h1>
 
         </header>
 
 		<div data-role="main">
-			
-		 <div class="map"></div>
-		 
-		 
- <div class="recent-search">
+
+     
+            
+		<div class="recent-search">
+            <form class="hotdog flex-stretch" data-ajax="false" id="recent-search">
+               <input type="search" data-role="none" placeholder="Search">
+            </form>
+            </div>
+            
+            <div class="map-container"></div>
+            	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="500" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          
+
+           
+      </div>
+ 
+
+ <!-- <div class="recent-search">
             <form class="hotdog flex-stretch" data-ajax="false" id="recent-search">
                <input type="search" data-role="none" placeholder="Search">
             </form>
 
          </div>
-
+	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="500" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
          <a href="#choose-flower-page" class="floater bottom right circle-button">&plus;</a>
       </div>
 
+-->
 
 		<footer data-role="footer">
 			<ul>
@@ -372,10 +371,7 @@
 		<header data-role="header" class="display-flex overscroll">
 			<h1>Flower Profile</h1>
 
-		<ul>
-				<li><a href="#home-page"><</a></li>
 
-			</ul>
 
 		</header>
          
@@ -391,7 +387,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>Tulips typically bear cup-shaped flowers in almost every shade but true blue. They can be double or single, fringed or twisted, perfumed or nonscented.</P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -421,10 +417,6 @@
 		<header data-role="header" class="display-flex overscroll">
 			<h1>Flower Profile</h1>
 
-			<ul>
-				<li><a href="#home-page"><</a></li>
-
-			</ul>
 		</header>
          
 
@@ -442,7 +434,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>Roses are erect, climbing, or trailing shrubs, the stems of which are usually copiously armed with prickles of various shapes and sizes, commonly called thorns.</P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -472,10 +464,6 @@
 		<header data-role="header" class="display-flex">
 			<h1>Flower Profile</h1>
 
-				<ul>
-				<li><a href="#home-page"><</a></li>
-
-			</ul>
 		</header>
          
 
@@ -493,7 +481,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>They have large, glossy, much-divided leaves borne on annual stems produced by fleshy rootstocks. In late spring and early summer they produce large single and double flowers of white, pink, rose, and deep crimson colour.</P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -522,10 +510,7 @@
 	<section data-role="page" id="flower4-profile-page">
 		<header data-role="header" class="display-flex">
 			<h1>Flower Profile</h1>
-				<ul>
-				<li><a href="#home-page"><</a></li>
-
-			</ul>
+	
 		</header>
          
 
@@ -543,7 +528,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>Violets (Viola) are a genus of Spring flowering plants in the family Violaceae. There are around 400-500 species of Violets in the genus. Violets are native to the temperate Northern Hemisphere and are also distributed in Hawaii, Australasia, and the Andes in South America. Violets are found in moist and slightly shaded conditions such as hedgerows. </P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -572,10 +557,7 @@
 	<section data-role="page" id="flower5-profile-page">
 		<header data-role="header" class="display-flex">
 			<h1>Flower Profile</h1>
-				<ul>
-				<li><a href="#home-page"><</a></li>
 
-			</ul>
 		</header>
          
 
@@ -592,7 +574,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>Each flower has a rosette of small, thin white petals surrounding a bright yellow centre. These are supported by a single stem which grows from a group of dark green rounded leaves. The petals can sometimes be tinged with pink. It is a common wild flower found growing in our garden lawns. </P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -620,10 +602,7 @@
 	<section data-role="page" id="flower6-profile-page">
 		<header data-role="header" class="display-flex">
 			<h1>Flower Profile</h1>
-					<ul>
-				<li><a href="#home-page"><</a></li>
-
-			</ul>
+					
 		</header>
          
 
@@ -640,7 +619,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+   			<p>Narcissus has conspicuous flowers with six petal-like tepals surmounted by a cup- or trumpet-shaped corona. The flowers are generally white and yellow (also orange or pink in garden varieties), with either uniform or contrasting coloured tepals and corona.</P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>

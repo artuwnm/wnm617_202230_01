@@ -20,7 +20,7 @@
 }
 
 body {
-	margin-left: 2em;
+	
 	font-size: 100%;
 	font-family: var(--font-sans);
 
@@ -111,7 +111,7 @@ a:hover {
 .ui-mobile .form-label {
 	font-size: 0.8em;
 	color: var(--color-neutral-darkest);
-	margin: 0.5rem 0;
+
 
 }
 
@@ -384,20 +384,58 @@ a:hover {
 
 }
 
-
-.map-image {
-	background-image:  url(..lib/image/google_map.PNG);
+.map-filter-select,
+.existing-flower-select{
+  font-size: 13px;
+  padding: 20px 8px 20px 14px;
+  background: #fff;
+  border: 1px solid #185193;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
 }
 
-.map-filter-select {
-    width: 90%;
-    border-radius: 50px;
-    top: 20px;
-    margin-left: auto;
+
+.map-filter-select{
+    padding: 15px 8px 15px 14px;
+    display:inline-block;
+    width:70%;
+    top:20px;
+    margin-left: 7%;
     margin-right: auto;
+    z-index: 20;
+}
+.map {
+
+	   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-filter-select{
+    padding: 15px 8px 15px 14px;
+    display:inline-block;
+    width:70%;
+    top:20px;
+    margin-left: 7%;
+    margin-right: auto;
+    z-index: 20;
 }
 
 
+#flowermap-page .map-container{
+    /*background: url("../images/google-map.png");
+    z-index:-100;
+    position: static !important; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
 /* Login */
 
 

@@ -13,7 +13,7 @@ $(() => {
       // PAGE ROUTING. ada di pages.js
       switch(ui.toPage[0].id) {
          case "home-page": HomePage(); break;
-         case "flowermap-page": MapPage(); break;
+         case "flowermap-page": FlowerMapPage(); break;
          case "add-flower-page": AddFlowerPage(); break;
          case "myboard-page": BoardPage(); break;
       }
