@@ -6,4 +6,4 @@
 
 - http://yoomiyi.com/aau/wnm617/yoomi.yi
 
-- ID: user0 PW: pass
+- My App ID: user0 PW: pass
