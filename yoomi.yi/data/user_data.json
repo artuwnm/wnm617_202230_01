@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Perkins Barrett",
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/919/fff/?text=user1",
+    "date_create": "2022-02-07 09:21:07"
+  },
+  {
+    "id": 2,
+    "name": "Stacy Richard",
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/862/fff/?text=user2",
+    "date_create": "2022-03-27 03:46:21"
+  },
+  {
+    "id": 3,
+    "name": "Gamble Ferrell",
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/730/fff/?text=user3",
+    "date_create": "2022-01-25 09:43:47"
+  },
+  {
+    "id": 4,
+    "name": "Lindsay Becker",
+    "username": "user4",
+    "email": "user4@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/945/fff/?text=user4",
+    "date_create": "2022-01-19 04:29:23"
+  },
+  {
+    "id": 5,
+    "name": "Burgess Nelson",
+    "username": "user5",
+    "email": "user5@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/799/fff/?text=user5",
+    "date_create": "2022-03-04 10:55:19"
+  },
+  {
+    "id": 6,
+    "name": "Adela Terrell",
+    "username": "user6",
+    "email": "user6@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/919/fff/?text=user6",
+    "date_create": "2022-04-03 04:45:45"
+  },
+  {
+    "id": 7,
+    "name": "Twila Roach",
+    "username": "user7",
+    "email": "user7@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/786/fff/?text=user7",
+    "date_create": "2022-01-03 04:45:10"
+  },
+  {
+    "id": 8,
+    "name": "Isabel Fitzgerald",
+    "username": "user8",
+    "email": "user8@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/880/fff/?text=user8",
+    "date_create": "2022-04-07 08:18:23"
+  },
+  {
+    "id": 9,
+    "name": "Rosa Browning",
+    "username": "user9",
+    "email": "user9@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/723/fff/?text=user9",
+    "date_create": "2022-03-07 01:07:43"
+  },
+  {
+    "id": 10,
+    "name": "Brandy Alford",
+    "username": "user10",
+    "email": "user10@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/731/fff/?text=user10",
+    "date_create": "2022-04-06 05:47:43"
+  }
+]

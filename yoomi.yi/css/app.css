@@ -1,0 +1,555 @@
+/* CSS RESET */
+
+
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--font-serif: 'Spectral', serif;
+	--font-sans:  'Assistant', sans-serif;
+
+	--color-neutral-light:  #F8F4F3;
+	--color-neutral-medium:  #D6BEB7;
+	--color-neutral-dark:  #5D3B22;
+	--color-neutral-darkest:  #3B3A3B;
+
+
+	--header-height:  3rem;
+}
+
+body {
+	
+	font-size: 100%;
+	font-family: var(--font-sans);
+
+
+}
+
+h1 {
+	font-size:  2em;
+
+	font-family: var(--font-serif);
+
+}
+
+h2 {
+
+	font-size:  1em;
+<<<<<<< HEAD
+
+	font-family: var(--font-serif);
+
+    margin-left: 2em;
+=======
+	font-family: var(--font-sans);
+	margin-left: 2em;
+
+}
+
+h3 {
+
+	font-size:  1em;
+	font-family: var(--font-sans);
+}
+
+h4 {
+	font-size:  1.2em;
+
+	font-family: var(--font-serif);
+	text-align: center;
+
+>>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
+}
+
+
+a {
+	color: inherit;
+	font-weight: 500;
+	text-decoration: none;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.underline {
+	text-decoration: underline;
+}
+
+.signin-form-text {
+
+	font-size:  1em;
+	font-family: var(--font-sans);
+	color:  #D3D3D3;
+	
+}
+
+
+
+
+/* Forms */
+
+.description {
+
+	padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+.form-control  {
+	margin: 1em 0;
+
+
+}
+
+.ui-mobile .form-label {
+	font-size: 0.8em;
+	color: var(--color-neutral-darkest);
+
+
+}
+
+.form-input {
+	display: inline-block;
+	width: 100%;
+	border-width: 0;
+	background-color: var(--color-neutral-light);
+	font: inherit;
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	border-radius: 30px ;
+
+}
+
+.form-button-signin{
+	display: inline-block;
+	width: 100%;
+	border-width: 0;
+	background-color: var(--color-neutral-darkest);
+	color: var(--color-neutral-light);
+	font: var(--font-serif);
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+
+}
+
+.form-button{
+	display: inline-block;
+	width: 30%;
+	border-width: 0;
+	background-color: var(--color-neutral-darkest);
+	color: var(--color-neutral-light);
+	font: var(--font-serif);
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+
+}
+
+.form-button2{
+	display: inline-block;
+	width: 50%;
+	border-width: 0;
+	background-color: var(--color-neutral-darkest);
+	color: var(--color-neutral-light);
+	font: var(--font-serif);
+	font-weight: 300;
+	padding: 0.5em 1em;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+}
+
+.form-radio {
+	display: inline-block;
+}
+
+
+.gallery-box {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.gallery-box2 {
+  display: flex;
+  justify-content: left;
+
+}
+
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 8px;
+}
+
+.individual-page{
+	margin-top: 3em;
+	text-align: center;
+
+}
+
+.make-center{
+	text-align: center;
+
+}
+
+.individual-image {
+	width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right:  auto;
+    display: block;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/*Flower image list*/
+
+.image-nav-1{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-2{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-3{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-4{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image-nav-5{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-6{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image-nav-7{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-8{
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    background-image: url(../lib/image/flower/flower_8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nearby-1 {
+
+	width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../lib/image/flower/flower_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nearby-2 {
+
+	width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../lib/image/flower/flower_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.add-picture {
+
+	width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-picture {
+
+	width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-position: center;
+}
+
+#signin-form,{
+	padding: 1em;
+}
+
+
+<<<<<<< HEAD
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+=======
+ .column {
+    float: left;
+    width: 50%;
+    }
+
+
+.current-map {
+	 background-position: center;
+	 width: 100%;
+	 height:  400px;
+	 margin-top:  2em;
+
+
+}
+
+.map-filter-select,
+.existing-flower-select{
+  font-size: 13px;
+  padding: 20px 8px 20px 14px;
+  background: #fff;
+  border: 1px solid #185193;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.map-filter-select{
+    padding: 15px 8px 15px 14px;
+    display:inline-block;
+    width:70%;
+    top:20px;
+    margin-left: 7%;
+    margin-right: auto;
+    z-index: 20;
+}
+.map {
+
+	   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-filter-select{
+    padding: 15px 8px 15px 14px;
+    display:inline-block;
+    width:70%;
+    top:20px;
+    margin-left: 7%;
+    margin-right: auto;
+    z-index: 20;
+}
+
+
+#flowermap-page .map-container{
+    /*background: url("../images/google-map.png");
+    z-index:-100;
+    position: static !important; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+/* Login */
+
+
+.logo-img {
+	width: 100%;
+}
+
+#signin-form {
+    padding: 2em;
+}
+#signup-form {
+    padding: 2em;
+}
+#add-dog-form {
+    padding: 2em;
+}
+#edit-dog-form{
+    padding: 2em;
+}
+#edit-user-form{
+    padding: 2em;
+}
+
+.login-form-text{
+    text-align: center;
+}
+
+
+/*page layouts */
+
+.ui-mobile .ui-page-active {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+
+
+[data-role="main"] {
+	flex: 1 1 100%;
+	overflow: hidden;
+	position: relative;
+	 padding: 0 1.6em;
+}
+
+.ui-header,
+.ui-footer {
+	flex: none;
+	height: var(--header-height);
+	line-height: 3rem;
+	border-width: 0;
+	background-color: var(--color-neutral-medium);
+	color: var(--color-neutral-darkest);
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	
+	/*set and position child..content inside*/
+	position: relative;
+	overflow: hidden;
+}
+
+.ui-header .ui-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+.ui-header ul,
+.ui-footer ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.ui-footer li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.ui-header a,
+.ui-footer a {
+	display: block;
+	padding: 0 1em;
+
+}
+
+
+/* Layout Classes */
+
+.hidden { display: none; }
+
+.display-flex { display: flex; }
+.display-block { display: block; }
+.display-inline-flex { display: inline-flex; }
+.display-inline-block { display: inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
+
+.flex-column { flex-direction: column; }
+.overscroll { overflow:auto; }

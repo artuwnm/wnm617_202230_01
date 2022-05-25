@@ -1,0 +1,1084 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Live Life in Full - Bloom.</title>
+
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+   <script src="lib/js/jquery-2.2.4.min.js"></script>
+
+   <script src="js/app.js"></script>
+   <script src="js/signin.js"></script>
+   <script src="js/function.js"></script>
+   <script src="js/pages.js"></script>
+   <script src="js/parts.js"></script>
+   <script src="js/maps.js"></script>
+
+   <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+ 
+
+
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+	</style>
+
+       <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+</head>
+
+
+<body>
+
+<!-- signin-->
+
+	<section data-role="page" id="signin-page">
+		<div data-role="main" class="display-flex flex-column">
+			<div class="flex-stretch"></div>
+                  <div style="text-align:center;margin-bottom:10vmin">
+                    <h1> Bloom.</h1>
+                </div>
+            </div>
+    
+				<form id="signin-form" class="form" data-ajax="false">
+				<div class="form-control">
+					<label for="signin-username" class="form-label">Username or Email</label>
+					<input type="text" id="signin-username" data-role="none" class="form-input" placeholder="Type Username or Email">
+				</div>
+				<div class="form-control">
+					<label for="signin-password" class="form-label">Password</label>
+					<input type="password" id="signin-password" data-role="none" class="form-input" placeholder="Type Password">
+				</div>
+			
+
+				<div class="make-center">
+				<div class="form-control">
+					<a href="#home-page"><button type="submit" class="form-button-signin" data-role="none">Submit</button></a>
+				</div>
+
+				<p class="signin-form-text">Don't have an account yet?</p>
+				<p class="underline"><a href="#signup-page">Sign Up</a></p>
+			</form>
+
+			
+		</div>
+		
+	</section>
+
+	<!-- signup page -->
+
+	<section data-role="page" id="signup-page">
+     <header data-role="header">
+          <h1>Create Account</h1>
+           <a href="#signin-page" data-rel="back"><</a>
+        </header>            
+        <div data-role="main">
+
+                <div class="form-control">
+                    <label for="signup-username">Username</label>
+                    <input type="text" placeholder="Create your username" id="signup-username" data-role="none" class="form-input">
+                </div>
+
+                 <div class="form-control">
+                    <label for="signup-fullname">Full Name</label>
+                    <input type="text" placeholder="Type your fullname" id="signup-fullname" data-role="none" class="form-input">
+                </div>
+
+                 <div class="form-control">
+                    <label for="signup-email">Email</label>
+                    <input type="text" placeholder="Type your email address" id="signup-email" data-role="none" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="signup-password">Password</label>                    
+                    <input type="password" placeholder="Password" id="signup-password" data-role="none" class="form-input">
+                </div>
+
+                <div class="form-control">
+                    <label for="confirm-password">Confirm Password</label>                    
+                    <input type="password" placeholder="Password" id="confirm-password" data-role="none" class="form-input">
+                </div>
+
+                </form>
+		
+				<div class="make-center">
+					<a href="#signup-sucess-page" class="form-button">Sign Up</a>
+				</div>
+			
+		</div>
+	</section>
+
+	<!-- Signup success page -->
+
+	<section data-role="page" id="signup-success-page">
+     <header data-role="header">
+     	<h1>Welcome</h1>
+     </header>
+
+     	<div data-role="main" class="make-center">
+     	<h1> You've been successfully created an account! </h1>
+
+			<a href="#signin-page" class="form-button2">Back to Login</a>
+
+		</div>
+
+
+     </section>
+
+
+	<!-- home page-->
+
+	<section data-role="page" id="home-page">
+		<header data-role="header">
+			<h1>Bloom.</h1>
+		</header>
+                <h4>Your Flower Lists</h4>
+                
+
+        <div data-role="main" class="overscroll">
+
+        <div class="gallery-box">
+   			<div class="display-grid flex-column">
+
+
+   				<div class="flower-list"><a href="#flower1-profile-page">Tulip<div class="image-nav-1"></div></div></a>
+
+   				<div class="flower-list"><a href="#flower2-profile-page">Rose<div class="image-nav-2"></div></div></a>
+
+   				<div class="flower-list"><a href="#flower3-profile-page">Peony<div class="image-nav-3"></div></div></a>
+   				<div class="flower-list"><a href="#flower4-profile-page">Violet<div class="image-nav-4"></div></div></a>
+   				<div class="flower-list"><a href="#flower5-profile-page">Daisy<div class="image-nav-5"></div></div></a>
+   				<div class="flower-list"><a href="#flower6-profile-page">Narcissus<div class="image-nav-6"></div></div></a>
+   		
+   		
+   	
+   			</div>
+   		</div>
+	</div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+
+	<!-- Map recent page -->
+
+    <section data-role="page" id="flowermap-page">
+        <header data-role="header">
+            <h1>Flower Location</h1>
+
+        </header>
+
+		<div data-role="main">
+
+     
+            
+		<div class="recent-search">
+            <form class="hotdog flex-stretch" data-ajax="false" id="recent-search">
+               <input type="search" data-role="none" placeholder="Search">
+            </form>
+            </div>
+            
+            <div class="map-container"></div>
+            	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="500" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          
+
+           
+      </div>
+ 
+
+ <!-- <div class="recent-search">
+            <form class="hotdog flex-stretch" data-ajax="false" id="recent-search">
+               <input type="search" data-role="none" placeholder="Search">
+            </form>
+
+         </div>
+	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="500" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+         <a href="#choose-flower-page" class="floater bottom right circle-button">&plus;</a>
+      </div>
+
+-->
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+
+
+	<!-- Add more flower page-->
+
+	<section data-role="page" id="add-flower-page">
+		<header data-role="header">
+			<h1>Add Flower</h1>
+
+		</header>
+
+		<div data-role="main" class="overscroll">
+				<h3>Information</h3>
+				<div class="form-control">
+					<label for="add-flower-page" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="flower-color" data-role="none" class="form-input" placeholder="Type flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type comments..."></textarea>
+				</div>
+
+				<div class="form-control">
+					<label for="Add Picture" class="form-label">Add Picture</label>
+					
+					<img class= "add-picture" src="lib/image/upload_image.png">
+				</div>
+
+
+				<div class="make-center">
+				<a href="#register-sucess-page" class="form-button">Register</a>
+			</div>
+
+				</div>
+			</form>
+			
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+</section>
+
+
+<!-- Registration Success -->
+
+	<section data-role="page" id="register-sucess-page">
+		<header data-role="header">
+			<h1>Bloom.</h1>
+
+			
+		</header>
+
+		<div data-role="main">
+			<div class="make-center">
+				<h1>You've been sucessfully added new flower!</h1>
+			</div>
+					
+
+				<div class="make-center">
+				<a href="#home-page" class="form-button2">Back to List</a>
+			</div>
+
+				</div>
+			</form>
+			
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+</section>
+
+
+	<!-- My Board page
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
+	<section data-role="page" id="myboard-page">
+		<header data-role="header">
+			<h1>My Flower Lists</h1>
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+			</ul>
+		</header>
+		<div data-role="main" class="overscroll">
+			<ul>
+				<li><a href="#flower1-profile-page">Flower 1</a></li>
+				<li><a href="#flower-profile-page">Flower 2</a></li>
+				<li><a href="#flower-profile-page">Flower 3</a></li>
+				<li><a href="#flower-profile-page">Flower 4</a></li>
+				<li><a href="#flower-profile-page">Flower 5</a></li>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
+			</ul>
+		</div>
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+<<<<<<< HEAD
+=======
+
+>>>>>>> e05a9d6a450d7e8050961818fc2c6f57cd600376
+-->
+
+<!-- flower profile page -->
+
+
+<!-- 1. Tulip -->
+
+	<section data-role="page" id="flower1-profile-page">
+		<header data-role="header" class="display-flex overscroll">
+			<h1>Flower Profile</h1>
+
+
+
+		</header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_1.jpg">
+   			<h1>Tulip</h1>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>I found this Tulip near Lick Mill Park during jogging. It's color is pink and smells really good. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower1-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- 2. Rose -->
+
+	<section data-role="page" id="flower2-profile-page">
+		<header data-role="header" class="display-flex overscroll">
+			<h1>Flower Profile</h1>
+
+		</header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_2.jpg">
+
+
+   			<h1>Rose</h1>
+
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Roses are erect, climbing, or trailing shrubs, the stems of which are usually copiously armed with prickles of various shapes and sizes, commonly called thorns.</P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower2-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+			</section>
+
+
+<!-- 3. Peony -->
+
+	<section data-role="page" id="flower3-profile-page">
+		<header data-role="header" class="display-flex">
+			<h1>Flower Profile</h1>
+
+		</header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_3.jpg">
+
+
+   			<h1>Peony</h1>
+
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>They have large, glossy, much-divided leaves borne on annual stems produced by fleshy rootstocks. In late spring and early summer they produce large single and double flowers of white, pink, rose, and deep crimson colour.</P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower3-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- 4. Violet -->
+
+	<section data-role="page" id="flower4-profile-page">
+		<header data-role="header" class="display-flex">
+			<h1>Flower Profile</h1>
+	
+		</header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_4.jpg">
+
+
+   			<h1>Violet</h1>
+
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Violets (Viola) are a genus of Spring flowering plants in the family Violaceae. There are around 400-500 species of Violets in the genus. Violets are native to the temperate Northern Hemisphere and are also distributed in Hawaii, Australasia, and the Andes in South America. Violets are found in moist and slightly shaded conditions such as hedgerows. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower4-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- 5. Daisy -->
+
+	<section data-role="page" id="flower5-profile-page">
+		<header data-role="header" class="display-flex">
+			<h1>Flower Profile</h1>
+
+		</header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_5.jpg">
+
+
+   			<h1>Daisy</h1>
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Each flower has a rosette of small, thin white petals surrounding a bright yellow centre. These are supported by a single stem which grows from a group of dark green rounded leaves. The petals can sometimes be tinged with pink. It is a common wild flower found growing in our garden lawns. </P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower5-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+<!-- 6. Narcissus -->
+
+	<section data-role="page" id="flower6-profile-page">
+		<header data-role="header" class="display-flex">
+			<h1>Flower Profile</h1>
+					
+		</header>
+         
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+   			<img class= "individual-image" src="lib/image/flower/flower_6.jpg">
+
+
+   			<h1>Narcissus</h1>
+
+   		</div>
+
+   		<div>
+   			<h3>Color</h3>
+   			<p>Pink</p>
+   			<h3>Description </h3>
+   			<p>Narcissus has conspicuous flowers with six petal-like tepals surmounted by a cup- or trumpet-shaped corona. The flowers are generally white and yellow (also orange or pink in garden varieties), with either uniform or contrasting coloured tepals and corona.</P>
+   			<h3>Location </h3>
+   			<p>Lick Mill Park, San Jose</p>
+   		</div>
+
+   			<div class="make-center">
+
+   			 <a href="#flower6-edit-page" class="form-button">Edit</a>
+   			</div>
+   			
+   		
+   </div>
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+
+	<!-- Edit Page flower 1 -->
+
+	<section data-role="page" id="flower1-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+					<ul>
+				<li><a href="#flower1-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="overscroll">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower1-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- Edit Page flower 1 -->
+
+	<section data-role="page" id="flower2-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+				<ul>
+				<li><a href="#flower2-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main" class="overscroll">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="form overscroll">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower2-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- Edit Page flower 3 -->
+
+	<section data-role="page" id="flower3-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+				<ul>
+				<li><a href="#flower3-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="form overscroll">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower3-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+<!-- Edit Page flower 4 -->
+
+	<section data-role="page" id="flower4-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+				<ul>
+				<li><a href="#flower4-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main" class="overscroll">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="form">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower4-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+<!-- Edit Page flower 5 -->
+
+	<section data-role="page" id="flower5-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+				<ul>
+				<li><a href="#flower2-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="form overscroll">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower5-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+<!-- Edit Page flower 6 -->
+
+	<section data-role="page" id="flower6-edit-page">
+		<header data-role="header">
+			<h1>Edit Profile</h1>
+				<ul>
+				<li><a href="#flower6-profile-page"><</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+
+		<h3> New Information </h3>
+			<form id="edit-flower-form" class="form overscroll">
+				<div class="form-control">
+					<label for="edit-flower-type" class="form-label">Flower Type</label>
+					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-color-page" class="form-label">Flower Color</label>
+					<input type="text" id="edit-flower-color" data-role="none" class="form-input" placeholder="Type new flower color">
+				</div>
+
+				<div class="form-control">
+					<label for="edit-flower-comments" class="form-label">Description</label>
+					<textarea id="description"  rows="5" cols="7" data-role="none" class="form-input" placeholder="Type new comments..."></textarea>
+
+				<br>
+
+				<h3> Location </h3>
+				<div class="display flex space-between">
+				<p>4750 Lick Mill Blvd, Santa Clara, CA 95054</p>
+				<a href="#"><p class="underline">Edit Location</p></a>
+				</div>
+			</div>
+
+			</form>
+
+			<div class="individual-page">
+		   	<a href="#flower6-profile-page" class="form-button">Save</a>
+		   </div>
+   		</div>
+	</div>
+</div>
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+<!-- Edit Location -->
+
+
+	<section data-role="page" id="edit-location">
+		<header data-role="header">
+			<h1>Edit Location</h1>
+				<ul>
+				<li><a href="#home-page">home</a></li>
+
+			</ul>
+		</header>
+
+		<div data-role="main">
+
+		<h3> Use your location </h3>
+
+		<input type="search" id="location-search" placeholder="type the address or zipcode">
+
+		<button class="form-button">Search</button>
+
+		</div>
+	</div>
+
+		
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+<!-- Profile -->
+
+
+	<section data-role="page" id="user-profile-page">
+		<header data-role="header">
+			<h1>Profile</h1>
+
+		</header>
+
+		<div data-role="main" class="overscroll">
+
+		<h4> User Information </h4>
+	
+			<div class="make-center">
+				<img class="profile-picture" src="lib/image/profile.png">
+			
+				<p>Full Name: Yoomi Yi</p>
+				<p>Username: user</p>
+				<p>Email: user@gmail.com</p>
+
+
+			</div>
+			<br>
+				<div class="make-center">
+					<a href="#" class="form-button">Edit</a>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+	<section data-role="page" id="user-edit-page">
+		<header data-role="header">
+			<h1>Edit User</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Back</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#list-page">Save</a><li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<a href="#" class="js-logout">Logout</a>
+		</div>
+
+
+		<footer data-role="footer">
+			<ul>
+				<li><a href="#home-page">Home</a></li>
+				<li><a href="#flowermap-page">Map</a></li>
+				<li><a href="#add-flower-page">Add</a></li>
+				<li><a href="#user-profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+
+
+</body>
+</html>
