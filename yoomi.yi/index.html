@@ -149,12 +149,14 @@
    			<div class="display-grid flex-column">
 
 
-   				<li class="flower-list"><a href="#flower1-profile-page">Tulip<div class="image-nav-1"></div></a></li>
-   				<li class="flower-list"><a href="#flower2-profile-page">Rose<div class="image-nav-2"></div></a></li>
-   				<li class="flower-list"><a href="#flower3-profile-page">Peony<div class="image-nav-3"></div></a></li>
-   				<li class="flower-list"><a href="#flower4-profile-page">Violet<div class="image-nav-4"></div></a></li>
-   				<li class="flower-list"><a href="#flower5-profile-page">Daisy<div class="image-nav-5"></div></a></li>
-   				<li class="flower-list"><a href="#flower6-profile-page">Narcissus<div class="image-nav-6"></div></a></li>
+   				<div class="flower-list"><a href="#flower1-profile-page">Tulip<div class="image-nav-1"></div></div></a>
+
+   				<div class="flower-list"><a href="#flower2-profile-page">Rose<div class="image-nav-2"></div></div></a>
+
+   				<div class="flower-list"><a href="#flower3-profile-page">Peony<div class="image-nav-3"></div></div></a>
+   				<div class="flower-list"><a href="#flower4-profile-page">Violet<div class="image-nav-4"></div></div></a>
+   				<div class="flower-list"><a href="#flower5-profile-page">Daisy<div class="image-nav-5"></div></div></a>
+   				<div class="flower-list"><a href="#flower6-profile-page">Narcissus<div class="image-nav-6"></div></div></a>
    		
    		
    	
@@ -230,7 +232,7 @@
 
 	<section data-role="page" id="add-flower-page">
 		<header data-role="header">
-			<h1>Add Flowers</h1>
+			<h1>Add Flower</h1>
 
 		</header>
 
@@ -257,10 +259,6 @@
 					<img class= "add-picture" src="lib/image/upload_image.png">
 				</div>
 
-				<div class="form-control">
-					<label for="add-location" class="form-label">Location</label>
-					<input type="text" id="add-location" data-role="none" class="form-input" placeholder="Use your location">
-				</div>
 
 				<div class="make-center">
 				<a href="#register-sucess-page" class="form-button">Register</a>
@@ -286,10 +284,6 @@
 		<header data-role="header">
 			<h1>Bloom.</h1>
 
-			<ul>
-				<li><a href="#home-page">home</a></li>
-
-			</ul>
 			
 		</header>
 
@@ -384,7 +378,7 @@
    			<h3>Color</h3>
    			<p>Pink</p>
    			<h3>Description </h3>
-   			<p>Tulips typically bear cup-shaped flowers in almost every shade but true blue. They can be double or single, fringed or twisted, perfumed or nonscented.</P>
+   			<p>I found this Tulip near Lick Mill Park during jogging. It's color is pink and smells really good. </P>
    			<h3>Location </h3>
    			<p>Lick Mill Park, San Jose</p>
    		</div>
@@ -654,7 +648,7 @@
 		<div data-role="main">
 
 		<h3> New Information </h3>
-			<form id="edit-flower-form" class="form overscroll">
+			<form id="edit-flower-form" class="overscroll">
 				<div class="form-control">
 					<label for="edit-flower-type" class="form-label">Flower Type</label>
 					<input type="text" id="edit-flower-type" data-role="none" class="form-input" placeholder="Type new flower type">
@@ -709,7 +703,7 @@
 			</ul>
 		</header>
 
-		<div data-role="main">
+		<div data-role="main" class="overscroll">
 
 		<h3> New Information </h3>
 			<form id="edit-flower-form" class="form overscroll">
@@ -1027,15 +1021,13 @@
 
 		</header>
 
-		<div data-role="main">
+		<div data-role="main" class="overscroll">
 
 		<h4> User Information </h4>
 	
 			<div class="make-center">
 				<img class="profile-picture" src="lib/image/profile.png">
-				<h3>Yoomi</h3>
-
-				<br>
+			
 				<p>Full Name: Yoomi Yi</p>
 				<p>Username: user</p>
 				<p>Email: user@gmail.com</p>
@@ -1044,7 +1036,7 @@
 			</div>
 			<br>
 				<div class="make-center">
-					<a href="#" class="form-button">Edit Profile</a>
+					<a href="#" class="form-button">Edit</a>
 				</div>
 			</div>
 				

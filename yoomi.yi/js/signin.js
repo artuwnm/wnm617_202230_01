@@ -12,10 +12,13 @@ const checkLoginForm = async() => {
 
    })
 
-   if (founduser.result.length > 0) {
+
+
+
+ if (user === 'user0' && pass === 'pass') {
       // logged in
       console.log('success');
-      sessionStorage.userId = founduser.result[0].id;
+      sessionStorage.userId = 3;
       $("#signin-form")[0].reset();
    } else {
       // not logged in
@@ -23,8 +26,7 @@ const checkLoginForm = async() => {
       sessionStorage.removeItem('userId');
    }
 
-   checkUserId();
-}
+   
 
 const checkUserId = () => {
    let p = ["#signin-page","#signup-page",""];
